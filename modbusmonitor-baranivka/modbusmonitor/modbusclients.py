@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 from typing import TypedDict
 
 
@@ -9,6 +10,9 @@ class ModbusClient(TypedDict):
 
 
 def get_ip_addresses() -> list[ModbusClient]:
-    with open('modbus-clients.json', 'r', encoding='utf-8') as clients_json:
+    current_dir = Path(__file__).parent
+    file_path = current_dir / "modbus-clients.json"
+
+    with file_path.open('r', encoding='utf-8') as clients_json:
         clients = json.load(clients_json)
         return clients
