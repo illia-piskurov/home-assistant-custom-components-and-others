@@ -1,0 +1,11 @@
+{
+    "domain": "modbusmonitor",
+    "name": "Modbus Monitor",
+    "version": "1.0.0",
+    "codeowners": [],
+    "documentation": "https://www.home-assistant.io/integrations/modbus",
+    "requirements": [],
+    "loggers": [
+        "custom_components.modbusmonitor"
+    ]
+}
