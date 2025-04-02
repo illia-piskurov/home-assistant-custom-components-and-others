@@ -1,0 +1,5 @@
+__pycache__
+flows.json
+modbus-clients.json
+.venv
+configuration.real.yml
