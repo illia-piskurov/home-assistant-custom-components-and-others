@@ -1,0 +1,6 @@
+modbusmonitor:
+  tg_bot_token: "<>"
+  chat_id: "<>"
+  message_fail: "Не відповідає"
+  message_success: "Знову відповідає"
+  delay: 600
