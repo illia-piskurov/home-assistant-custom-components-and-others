@@ -3,7 +3,7 @@ from homeassistant.core import HomeAssistant
 from homeassistant.helpers.typing import ConfigType
 from homeassistant.helpers.event import async_track_time_interval
 from datetime import timedelta
-from .const import DOMAIN, DEFAULT_DELAY, DEFAULT_MESSAGE_FAIL, DEFAULT_MESSAGE_SUCCESS, DEFAULT_PORT
+from .const import DOMAIN, DEFAULT_DELAY, DEFAULT_MESSAGE_FAIL, DEFAULT_MESSAGE_SUCCESS
 from .monitor import monitor
 
 

@@ -11,8 +11,6 @@ class SocketChecker:
         for address in ip_addresses:
             result = await self._is_port_open(address['tcpHost'], address['tcpPort'])
             check_results.append((address, result))
-        # TEST
-        check_results.append((ModbusClient(name="TEST", tcpHost='1292131', tcpPort='402'), False))
         return check_results
 
     async def _is_port_open(self, ip: str, port: int, timeout: float = 5.0) -> bool:
