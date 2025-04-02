@@ -1,5 +1,5 @@
 import asyncio
-from modbusclients import ModbusClient
+from .modbusclients import ModbusClient
 
 class SocketChecker:
     async def check_failed(self, ip_addresses: list[ModbusClient]) -> list[ModbusClient]:
